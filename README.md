@@ -1,4 +1,4 @@
-# Image Color Palette Extractor 🎨
+# Image Color Palette Extractor
 
 This project is a fun and interactive Machine Learning mini-application that extracts the dominant colors from any uploaded image and generates a clean, visually appealing color palette. It uses clustering (K-Means) to identify the most representative colors and displays both HEX and RGB formats.
 
@@ -6,13 +6,45 @@ The goal of this project is to combine simple computer vision techniques with an
 
 ---
 
-## 🚀 Features
+## Core Features
 
-- Upload any image (PNG/JPG/JPEG)
-- Extract dominant colors using K-Means clustering
-- Display color palette in HEX and RGB values
-- Interactive Streamlit interface
-- Simple, lightweight, and beginner-friendly
+- Extract dominant colors from any image (PNG/JPG/JPEG)
+- Clean and aesthetic palette grid (Pinterest-style)
+- HEX values for each color
+- Auto-generated color names (HSL-based)
+- Extract between 3 to 10 colors
+
+---
+
+## Designer & Developer Tools
+- Copy all HEX values in one click
+- Download palette as PNG
+- Export palette as:
+  - JSON
+  - CSS variables
+  - Tailwind config snippet
+
+---
+
+## Color Analysis Tools
+- Color naming engine
+- Color harmony suggestions:
+  - Complementary
+  - Analogous
+  - Triadic
+
+---
+
+## Extra Visual Tools
+- Smooth gradient previews between colors
+- Palette history stored in session
+
+---
+
+## Optional Accessibility Tools
+- Toggle: Show Accessibility Info (WCAG Contrast)
+- View AA/AAA contrast ratings vs black & white
+- Helps understand text readability
 
 ---
 
@@ -23,32 +55,43 @@ The goal of this project is to combine simple computer vision techniques with an
 - **Scikit-learn** – K-Means clustering
 - **NumPy**
 - **Pillow** – image handling
+- **Custom modules for** 
+  - Color naming
+  - Harmony generation
+  - WCAG contrast
+  - PNG palette generation
+  - Export formats
 
 ---
 
-## 📁 Project Structure
-image-color-palette-extractor/
-
+Image-Color-Palette-Extractor/
 │── README.md
-
 │── requirements.txt
-
 │── data/
-
+│── notebooks/
+│   └── exploration.ipynb
 │── src/
+│   ├── app.py
+│   └── palette/
+│       ├── utils.py
+│       ├── naming.py
+│       ├── harmony.py
+│       ├── wcag.py
+│       ├── generate_png.py
+│       └── export_formats.py
 
-│ └── app.py
-
-└── notebooks/
-
-└── exploration.ipynb
 
 ---
 
 ## ▶️ How to Run
 
-1. Install dependencies:
-   
+1. Create a virtual environment
+   python3 -m venv .venv
+   source .venv/bin/activate   # macOS/Linux
+   .venv\Scripts\activate      # Windows
+
+2. Install dependencies:
+
   pip install -r requirements.txt
 
 3. Run the app:

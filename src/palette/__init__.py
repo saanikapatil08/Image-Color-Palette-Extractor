@@ -1,0 +1,1 @@
+# Makes "palette" a package
