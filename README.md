@@ -102,10 +102,7 @@ Image-Color-Palette-Extractor/
    python3 -m venv .venv
    source .venv/bin/activate   # macOS/Linux
    .venv\Scripts\activate      # Windows
-3. Install dependencies:
+2. Install dependencies:
    pip install -r requirements.txt
-3. Run the app:
-   
-  streamlit run src/app.py
-
+3. Run the app: streamlit run src/app.py
 4. Upload an image and view your generated color palette!
