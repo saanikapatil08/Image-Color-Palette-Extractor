@@ -48,7 +48,7 @@ The goal of this project is to combine simple computer vision techniques with an
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python**
 - **Streamlit** – interactive web UI
@@ -65,35 +65,45 @@ The goal of this project is to combine simple computer vision techniques with an
 ---
 
 Image-Color-Palette-Extractor/
+
 │── README.md
+
 │── requirements.txt
+
 │── data/
+
 │── notebooks/
+
 │   └── exploration.ipynb
+
 │── src/
+
 │   ├── app.py
+
 │   └── palette/
+
 │       ├── utils.py
+
 │       ├── naming.py
+
 │       ├── harmony.py
+
 │       ├── wcag.py
+
 │       ├── generate_png.py
+
 │       └── export_formats.py
 
 
 ---
 
-## ▶️ How to Run
-
+## How to Run
 1. Create a virtual environment
    python3 -m venv .venv
    source .venv/bin/activate   # macOS/Linux
    .venv\Scripts\activate      # Windows
-
-2. Install dependencies:
-
-  pip install -r requirements.txt
-
+3. Install dependencies:
+   pip install -r requirements.txt
 3. Run the app:
    
   streamlit run src/app.py
